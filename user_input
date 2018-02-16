@@ -1,2 +1,12 @@
-puts "Enter your first name"
+puts "Enter your first name: "
 first_name = gets.chomp
+puts "Enter your Last name: "
+last_name  = gets.chomp
+puts "Full name is #{first_name+" "+last_name}"
+
+Output:
+    Enter your first name:
+                         Biplob
+Enter your Last name:
+                    Orton
+Full name is Biplob Orton
