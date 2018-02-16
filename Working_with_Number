@@ -1,0 +1,28 @@
+puts "Enter the first number: "
+first_number = gets.chomp
+puts "Enter the last number: "
+last_number  = gets.chomp
+
+puts "Addition: #{first_number.to_i + last_number.to_i}"  #Using 'to_i' for convert string to integer
+puts "Subtraction: #{first_number.to_i - last_number.to_i}"
+puts "Multiplication: #{first_number.to_i * last_number.to_i}"
+puts "Division: #{first_number.to_i / last_number.to_i}"
+
+puts "Addition: #{first_number.to_f + last_number.to_f}"  #Using 'to_f' for convert string to float
+puts "Subtraction: #{first_number.to_f - last_number.to_f}"
+puts "Multiplication: #{first_number.to_f * last_number.to_f}"
+puts "Division: #{first_number.to_f / last_number.to_f}"
+
+Output:
+    Enter the first number:
+                        1.5
+Enter the last number:
+                   1.2
+Addition: 2
+Subtraction: 0
+Multiplication: 1
+Division: 1
+Addition: 2.7
+Subtraction: 0.30000000000000004
+Multiplication: 1.7999999999999998
+Division: 1.25
