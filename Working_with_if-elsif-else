@@ -1,0 +1,56 @@
+def add(first_number,last_number)
+  first_number.to_i+last_number.to_i
+end
+
+def sub(first_number,last_number)
+  first_number.to_i-last_number.to_i
+end
+
+def mul(first_number,last_number)
+  first_number.to_i*last_number.to_i
+end
+
+def div(first_number,last_number)
+  first_number.to_i/last_number.to_i
+end
+
+puts "What operation you want to execute:1.Addition,2.Subtraction, 3.Multiplication, 4.Division"
+choice = gets.chomp
+
+puts "Enter the first number: "
+first_number = gets.chomp
+puts "Enter the last number : "
+last_number  = gets.chomp
+
+
+
+
+if choice == "1"
+  puts "You select addition operation"
+  result = add(first_number,last_number)
+
+elsif choice == "2"
+  puts "You select subtraction operation"
+  result = sub(first_number,last_number)
+elsif choice == "3"
+  puts "You select multiplication operation"
+  result = mul(first_number,last_number)
+elsif choice == "4"
+  puts "You select division opeartion"
+  result = div(first_number,last_number)
+else
+  puts "Please select Valid operation"
+end
+
+puts "The result is: #{result}"
+
+
+Output:
+    What operation you want to execute:1.Addition,2.Subtraction, 3.Multiplication, 4.Division
+2
+Enter the first number:
+                    20
+Enter the last number :
+    10
+You select subtraction operation
+The result is: 10
