@@ -1,0 +1,48 @@
+#Now used several method for add,sub,mul,div.
+
+puts "Enter the first number: "
+first_number = gets.chomp
+puts "Enter the last number : "
+last_number  = gets.chomp
+
+def add(first_number,last_number)
+  first_number+last_number
+end
+
+def sub(first_number,last_number)
+  first_number-last_number
+end
+
+def mul(first_number,last_number)
+  first_number*last_number
+end
+
+def div(first_number,last_number)
+  first_number/last_number
+end
+
+#Used to_i
+puts "Add: #{add(first_number.to_i,last_number.to_i)}"
+puts "Sub: #{sub(first_number.to_i,last_number.to_i)}"
+puts "Mul: #{mul(first_number.to_i,last_number.to_i)}"
+puts "Div: #{div(first_number.to_i,last_number.to_i)}"
+
+#Used to_f
+puts "Add: #{add(first_number.to_f,last_number.to_f)}"
+puts "Sub: #{sub(first_number.to_f,last_number.to_f)}"
+puts "Mul: #{mul(first_number.to_f,last_number.to_f)}"
+puts "Div: #{div(first_number.to_f,last_number.to_f)}"
+
+Output:
+    Enter the first number:
+                        21
+Enter the last number :
+    13
+Add: 34
+Sub: 8
+Mul: 273
+Div: 1
+Add: 34.0
+Sub: 8.0
+Mul: 273.0
+Div: 1.6153846153846154
