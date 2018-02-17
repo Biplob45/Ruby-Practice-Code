@@ -1,0 +1,73 @@
+#While Loop
+
+#print 1 to 10
+
+count = 1
+while count <= 10
+  puts count
+  count += 1
+end
+
+puts "Print 0 to 10: "
+10.times {|n| puts n+1}
+
+puts "Again Print 1 to 10"
+(1..10).each {|n| puts n}
+
+puts "Print Only the odd number: "
+(1..10).step(2){|n| puts n}
+
+#until is same as while
+
+while array.empty?
+  puts array.pop
+end
+
+until condition
+  #.....
+end
+
+#if / unless
+#
+# while / until
+
+
+Output:
+    1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Print 0 to 10:
+    1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Again Print 1 to 10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Print Only the even number:
+                        1
+3
+5
+7
+9
