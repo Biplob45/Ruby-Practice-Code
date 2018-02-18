@@ -22,3 +22,15 @@ puts "Sixth semester gpa is: #{My_gpa[:Sixth_semester]}"
 
 My_gpa[":Thesis_result"] = 4
 puts "My Thesis result is: #{My_gpa[:Thesis_result]}"
+
+
+Output:
+
+    the fullname is: {"First_name"=>"Biplob", "Middle_name"=>"Orton"}
+the first name is: Biplob
+the Middle name is: Orton
+the fullname is: {"First_name"=>"Biplob", "Middle_name"=>"Orton"}
+My all semester gpa is {:First_semester=>3.89, :Second_semester=>3.91, :third_semester=>3.99, :fourth_semester=>3.87, :fifth_semester=>3.91, :Sixth_semester=>3.72, :seventh_semester=>3.67, :Eight_semester=>3.74}
+Second semester gpa is: 3.91
+Sixth semester gpa is: 3.72
+My Thesis result is:
