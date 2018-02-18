@@ -1,0 +1,51 @@
+numbers = [1,2,3,4,5]
+
+total = 0
+numbers.each { |number| total += number}
+puts "Total Value using each : #{total}"
+
+puts "using inject: "
+numbers.inject {|total,n | p n }
+#here the total value is 1.
+
+
+puts "Total Value using inject : "
+puts numbers.inject {|total,n| total + n }
+# 1 + 2 -> 3
+# 3 + 3 -> 6
+# 6 + 4 -> 10
+# 10 + 5 -> 15
+
+puts "Print the numbers 1 to 5: "
+numbers.inject(0) {|total, n| p n}
+#here the total value is 0.
+
+strings = %w(a bb ccc dddd eeeee)
+puts "The string size is: "
+puts strings.inject(0) {|total, str| total + str.size}
+
+puts "Total value is: "
+#Short cut way to inject...
+puts numbers.inject(:-)
+
+
+
+Output:
+    Total Value using each : 15
+using inject:
+          2
+3
+4
+5
+Total Value using inject :
+    15
+Print the numbers 1 to 5:
+    1
+2
+3
+4
+5
+The string size is:
+                    15
+Total value is:
+                -13
