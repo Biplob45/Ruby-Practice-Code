@@ -1,0 +1,54 @@
+numbers = [6,2,3,7,1,9,10]
+puts "After the number sort: #{numbers.sort}"
+
+
+strings = %w(dd rr cc aa mm kk qq)
+puts "After the string sort:#{strings.sort}"
+
+strings = %w(test foo bar bacon)
+
+#Sort by length ascending.
+puts strings.sort_by {|str| str.length}
+
+puts "Print reverse order"
+puts strings.sort_by {|str| -str.length}
+
+
+class Product < Struct.new(:price)
+end
+products = []
+products << Product.new(20) << Product.new(30) << Product.new(40) << Product.new(50)
+puts products.sort_by {|product| -product.price}
+
+
+mp3 = %w(21.mp3 10.mp3 25.mp3 20.mp3 5.mp3)
+puts "Sorting the mp3: #{mp3.sort_by {|file| file.scan(/\d+/).first.to_i}}"
+#  '\d' and 'first' means find the number in the first position.
+
+
+products = {chocolate: 200, bacon: 100, coconut: 260, apple: 150, banana: 50}
+p "The Product as the base of key  : #{products.sort_by {|k,v|k}.to_h}"
+p "The Product as the base of value: #{products.sort_by {|k,v|v}.to_h}"
+
+
+
+Output:
+
+    After the number sort: [1, 2, 3, 6, 7, 9, 10]
+After the string sort:["aa", "cc", "dd", "kk", "mm", "qq", "rr"]
+foo
+bar
+test
+bacon
+Print reverse order
+bacon
+test
+bar
+foo
+#<struct Product price=50>
+#<struct Product price=40>
+#<struct Product price=30>
+#<struct Product price=20>
+Sorting the mp3: ["5.mp3", "10.mp3", "20.mp3", "21.mp3", "25.mp3"]
+"The Product as the base of key  : {:apple=>150, :bacon=>100, :banana=>50, :chocolate=>200, :coconut=>260}"
+"The Product as the base of value: {:banana=>50, :bacon=>100, :apple=>150, :chocolate=>200, :coconut=>260}"
