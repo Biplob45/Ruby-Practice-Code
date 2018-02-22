@@ -1,0 +1,44 @@
+hash = {}   #Create an empty Hash
+hash = Hash.new
+
+hash = {
+    bacon: 300,
+    name: "Biplob Orton",
+    "age" => 22}
+
+hash[:bacon] = 100
+puts hash[:bacon]
+puts hash[:name]
+
+p "With the key and value: #{hash}"
+
+p "Only the Key: #{hash.keys}"
+
+p "Only the values: #{hash.values}"
+
+
+country_codes = {
+    "ES" => "Spain",
+    "UK" => "United Kingdom",
+    "US" => "United States"
+}
+
+puts country_codes["US"]
+
+
+count = Hash.new(0)
+words = [ "hello", "there", "hello", "there", "hello", ]
+p words
+
+words.each {|word| count[word]+=1}
+p count
+
+
+100
+Biplob Orton
+"With the key and value: {:bacon=>100, :name=>\"Biplob Orton\", \"age\"=>22}"
+"Only the Key: [:bacon, :name, \"age\"]"
+"Only the values: [100, \"Biplob Orton\", 22]"
+United States
+["hello", "there", "hello", "there", "hello"]
+{"hello"=>3, "there"=>2}
