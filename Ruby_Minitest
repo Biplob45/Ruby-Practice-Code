@@ -1,0 +1,57 @@
+#minitest output symbles:
+#  . = Pass
+#  F = Fail
+#  E = Error
+#  S = Skip
+
+require 'minitest/autorun'
+
+def add_two_numbers(a,b)
+  a + b
+end
+
+class Testfoo < Minitest::Test
+  def test_minitest
+    assert_equal 5, add_two_numbers(2,3)
+  end
+end
+
+
+
+
+# magic_ball.rb
+require 'minitest/autorun'
+
+class MagicBallTest < Minitest::Test
+  def test_ask_returns_an_answer
+    magic_ball = MagicBall.new
+    assert magic_ball.ask("Whatever") != nil
+  end
+end
+
+class MagicBall
+  def ask question
+    "Whatever"
+  end
+end
+#Since the ask method will return the "Whatever" string, the test will pass because the returned value is not nil.
+
+
+
+ Output :
+    Started
+
+
+##teamcity[enteredTheMatrix timestamp = '2018-02-22T03:24:24.083-0800']
+
+##teamcity[testCount count = '0' timestamp = '2018-02-22T03:24:24.084-0800']
+
+##teamcity[testStarted name = 'test_minitest' captureStandardOutput = 'true' locationHint = 'ruby_minitest_qn://Testfoo.test_minitest' timestamp = '2018-02-22T03:24:24.084-0800']
+
+##teamcity[testFinished name = 'test_minitest' duration = '0' timestamp = '2018-02-22T03:24:24.084-0800']
+
+##teamcity[testStarted name = 'test_ask_returns_an_answer' captureStandardOutput = 'true' locationHint = 'ruby_minitest_qn://MagicBallTest.test_ask_returns_an_answer' timestamp = '2018-02-22T03:24:24.085-0800']
+
+##teamcity[testFinished name = 'test_ask_returns_an_answer' duration = '0' timestamp = '2018-02-22T03:24:24.085-0800']
+Finished in 0.00100s
+2 tests, 2 assertions, 0 failures, 0 errors, 0 skips
