@@ -1,0 +1,28 @@
+
+#Working with Files in Ruby
+# Write
+# Read
+# glob
+
+#Create a file name "text.txt" and write in the file "Hello"
+File.write("text.txt","Hello")
+
+#Now Read from the file and print
+p File.read("text.txt")
+
+
+p Dir.pwd
+
+
+p Dir.glob("*.txt")
+
+
+p Dir.glob("*.rb")
+
+
+
+Output:
+    "Hello"
+    "C:/Users/user/RubymineProjects/Ruby Practice Code"
+    ["text.txt"]
+    []
