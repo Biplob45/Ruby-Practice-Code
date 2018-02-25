@@ -1,0 +1,15 @@
+#Ruby String Interpolation  #{variable_name}
+# #{}
+
+name = "Biplob Orton"
+puts "My name is: " + name
+
+CGPA = 3.82
+puts "My cgpa is: #{CGPA}"
+
+future_plan = "Higher Study in CHAINA"
+puts "My future plan is: " + future_plan
+
+cost = 250000
+puts "The total cost is: #{cost}"
+puts "The total cost is: "
