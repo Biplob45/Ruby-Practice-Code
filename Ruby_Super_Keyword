@@ -1,0 +1,39 @@
+#"super" keyword invokes a method with the same name as the current method in the superclass of the current class.
+#
+#Module Have higher priority than parent class and superclass.
+
+class Animal
+  def name
+    puts "Animal"
+  end
+end
+
+module ModuleName
+  def name
+    puts "Module"
+  end
+end
+
+
+class Cat < Animal
+  include ModuleName
+  def name
+    super
+    puts "Cat"
+    super
+  end
+end
+
+c = Cat.new
+a = Animal.new
+c.name
+a.name
+
+
+
+Output:
+
+    Module
+    Cat
+    Module
+    Animal
