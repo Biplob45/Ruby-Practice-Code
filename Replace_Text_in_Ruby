@@ -1,0 +1,20 @@
+
+
+Full_Name = "Biplob Orton"
+
+p Full_Name.gsub("Orton", "Viper")
+
+Best_Friends = "The number of my best friends is : 10"
+p Best_Friends.gsub("10","1")
+
+Best_Friends_Name = "My Best Friend Name is : n.j.f"
+p Best_Friends_Name.gsub("n.j.f","Nus")
+
+p Best_Friends.gsub(/\d+/,"1")
+
+
+Output :
+    "Biplob Viper"
+    "The number of my best friends is : 1"
+    "My Best Friend Name is : Nusaema"
+    "The number of my best friends is : 1"
