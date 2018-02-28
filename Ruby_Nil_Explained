@@ -1,0 +1,50 @@
+
+p nil
+
+p nil.class
+p nil.object_id
+
+array = [1,2,4,"Biplob"]
+p array[3]
+p array[4]
+
+#Always returns an empty hash. {}
+p nil.to_h
+
+#Always returns an empty array. []
+p nil.to_a
+
+#Always returns zero. 0.0
+p nil.to_f
+
+#Returns zero as a rational.  (0/1)
+p nil.to_r
+
+#Always returns the empty string.   ""
+p nil.to_s
+
+p nil?
+
+p inspect
+
+if nil  #output : nil
+  puts "Nothing"
+end
+
+
+
+
+    Output :
+
+    nil
+    NilClass
+    4
+    "Biplob"
+    nil
+    {}
+    []
+    0.0
+    (0/1)
+    ""
+    false
+    "main"
