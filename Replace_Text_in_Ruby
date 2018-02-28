@@ -16,5 +16,5 @@ p Best_Friends.gsub(/\d+/,"1")
 Output :
     "Biplob Viper"
     "The number of my best friends is : 1"
-    "My Best Friend Name is : Nusaema"
+    "My Best Friend Name is : Nus"
     "The number of my best friends is : 1"
