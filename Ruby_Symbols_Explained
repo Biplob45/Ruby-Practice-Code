@@ -26,3 +26,10 @@ puts "String to Symbol: "
 p "abc".to_sym
 p ("abc" + "abc").to_sym
 
+puts "Object".object_id
+puts :object.object_id
+
+
+    Output:
+    16877016
+    636500
