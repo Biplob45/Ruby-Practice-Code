@@ -31,5 +31,19 @@ puts :object.object_id
 
 
     Output:
+    1
+    2
+    3
+    [:a, :b, :c]
+    ["a", "b", "c"]
+    [:unpack1, :include?, :%, :*, :+, :to_c, :count, :partition, :sum, :next, :casecmp, :casecmp?, :insert, :bytesize, :match, :match?, :succ!, :<=>, :next!, :index, :rindex, :upto, :==, :===, :chr, :=~, :byteslice, :[], :[]=, :scrub!, :getbyte, :replace, :clear, :scrub, :empty?, :eql?, :-@, :downcase, :upcase, :dump, :setbyte, :swapcase, :+@, :capitalize, :capitalize!, :undump, :downcase!, :oct, :swapcase!, :lines, :bytes, :split, :codepoints, :freeze, :inspect, :reverse!, :grapheme_clusters, :reverse, :hex, :scan, :upcase!, :crypt, :ord, :chars, :prepend, :length, :size, :start_with?, :succ, :sub, :intern, :chop, :center, :<<, :concat, :strip, :lstrip, :end_with?, :delete_prefix, :to_str, :to_sym, :gsub!, :rstrip, :gsub, :delete_suffix, :to_s, :to_i, :rjust, :chomp!, :strip!, :lstrip!, :sub!, :chomp, :chop!, :ljust, :tr_s, :delete, :rstrip!, :delete_prefix!, :delete_suffix!, :tr, :squeeze!, :each_line, :to_f, :tr!, :tr_s!, :delete!, :slice, :slice!, :each_byte, :squeeze, :each_codepoint, :each_grapheme_cluster, :valid_encoding?, :ascii_only?, :rpartition, :encoding, :hash, :b, :unicode_normalize!, :unicode_normalized?, :to_r, :force_encoding, :each_char, :encode, :encode!, :unpack, :unicode_normalize]
+    Another Line:
+                ["include?", "casecmp?", "match?", "empty?", "eql?", "start_with?", "end_with?", "valid_encoding?", "ascii_only?", "unicode_normalized?"]
+    false
+    true
+    true
+    String to Symbol:
+                  :abc
+    :abcabc
     16877016
     636500
