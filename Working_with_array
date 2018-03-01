@@ -32,71 +32,21 @@ puts "#{array.push("Orton")}"
 puts "Pop a item from the array: "
 puts "#{array.pop(1)}"
 
+New_array = [1,2,3,"Biplob"]
+puts "After adding the output is: #{New_array + [5,6,"Orton"]}"
+#But this adding is not fixed
+puts "#{New_array}"
 
-Output:
-    Print All:
-              1
-2
-3
-Biplob
-4
-2
-4
-Orton
-Print the number three Position:
-                           Biplob
-Print the number four Position:
-                          4
-2
-4
-Orton
-Biplob added in the array list:
-                              true
-Is Orton Added in the array list:
-                                false
-Print the array in reverse format:
-                               4
-2
-4
-Orton
-Biplob
-3
-2
-1
-Print the array list with shuffle:
-                              3
-1
-2
-4
-2
-4
-Orton
-Biplob
-Create an array 0 to 10:
-    0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-Create an array 0 to 10 and print them with shuffle:
-                                                2
-3
-5
-1
-4
-6
-8
-7
-0
-9
-10
-Push a new item in the array:
-                           [1, 2, 3, "Biplob", [4, 2, 4, "Orton"], "Orton"]
-Pop a item from the array:
-                        ["Orton"]
+#Now showing how we can fixed it.
+puts "After adding the output is: #{New_array << [5,6,"Orton"]}"
+#Now this adding is fixed
+puts "#{New_array}"
+
+
+
+
+    Output:
+    After adding the output is: [1, 2, 3, "Biplob", 5, 6, "Orton"]
+    [1, 2, 3, "Biplob"]
+    After adding the output is: [1, 2, 3, "Biplob", [5, 6, "Orton"]]
+    [1, 2, 3, "Biplob", [5, 6, "Orton"]]
